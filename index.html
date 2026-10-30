@@ -7,7 +7,7 @@
   <meta name="description" content="A parent-led effort to bring Spanish immersion education to the Walnut Creek School District. Learn about Prop 58, join other Walnut Creek families, and help WCSD evaluate what is possible.">
   <meta name="theme-color" content="#4d9347">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">\n  <script src="script.js" defer></script>
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary">
@@ -48,7 +48,7 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Why it matters</span>
-          <h2>Give our kids another way to connect with the world</h2>
+          <h2>A wider world begins with another language</h2>
           <p>Spanish immersion is not an extra class competing with math, science, reading or writing. In an immersion model, students learn core academic subjects through both English and Spanish.</p>
         </div>
         <div class="cards">
@@ -102,38 +102,57 @@
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">How parents participate</span>
-          <h2>A request is simply a written request to your school principal</h2>
-          <p>WCSD has published instructions for parents who want to request a new language acquisition program. Submitting a request does not enroll your child in anything.</p>
+          <h2>All it takes is a copy-paste email to your school principal</h2>
+          <p>Choose the WCSD elementary school within your child's attendance boundary where your student is enrolled. We'll show you the current principal, the email address, and ready-to-send request text.</p>
         </div>
-        <div class="steps">
-          <article class="step">
-            <div>
-              <h3>Write to the principal of your WCSD attendance-boundary school</h3>
-              <p>WCSD asks parents or guardians to submit the request to the principal of the school where their child is enrolled within the child's attendance boundary.</p>
-            </div>
-          </article>
-          <article class="step">
-            <div>
-              <h3>Include the basic information WCSD requests</h3>
-              <p>Date, parent/guardian name, home address, student name and grade, requested school year, description of the program, and preferred languages of instruction.</p>
-            </div>
-          </article>
-          <article class="step">
-            <div>
-              <h3>Ask for Spanish-English immersion</h3>
-              <p>Families supporting this effort are asking WCSD to evaluate a Spanish-English immersion language acquisition program.</p>
-            </div>
-          </article>
-          <article class="step">
-            <div>
-              <h3>Tell the parent group after you send it</h3>
-              <p>Letting the organizing group know helps us keep our own informal count across WCSD schools.</p>
-            </div>
-          </article>
+
+        <div class="school-picker" role="group" aria-label="Choose your WCSD elementary school">
+          <button class="school-button" type="button" data-school="buena-vista">Buena Vista</button>
+          <button class="school-button" type="button" data-school="indian-valley">Indian Valley</button>
+          <button class="school-button" type="button" data-school="murwood">Murwood</button>
+          <button class="school-button" type="button" data-school="parkmead">Parkmead</button>
+          <button class="school-button" type="button" data-school="walnut-heights">Walnut Heights</button>
         </div>
-        <div class="actions" style="margin-top:26px">
-          <a class="button primary" href="https://www.walnutcreeksd.org/english-learner-program" target="_blank" rel="noopener">Open WCSD's official instructions</a>
-          <a class="button secondary" href="mailto:BringSpanishEdtoWalnutCreek@gmail.com">Email the parent group</a>
+
+        <div class="request-panel" id="school-request-panel" hidden>
+          <div class="request-panel-head">
+            <div>
+              <span class="request-kicker">Send your request to</span>
+              <h3 id="selected-school-name">Your school</h3>
+            </div>
+            <div class="recipient-card">
+              <span>Principal</span>
+              <strong id="principal-name"></strong>
+              <a id="principal-email" href="#"></a>
+            </div>
+          </div>
+
+          <div class="request-grid">
+            <div>
+              <h3>Three quick steps</h3>
+              <ol class="request-instructions">
+                <li>Replace the bracketed items with your family's information.</li>
+                <li>Copy the text below, or use the pre-filled email button.</li>
+                <li>Send it to the principal. WCSD will document the request and track requests for the same or substantially similar program.</li>
+              </ol>
+              <p class="small">The template includes the information WCSD says a written request should contain: date, parent/guardian name, home address, student name and grade, requested school year, program description, and preferred languages of instruction.</p>
+            </div>
+
+            <div class="template-wrap">
+              <label for="request-template">Copy-paste email text</label>
+              <textarea id="request-template" readonly aria-label="Spanish immersion request email template"></textarea>
+              <div class="template-actions">
+                <button class="button primary" type="button" id="copy-template">Copy email text</button>
+                <a class="button secondary" id="open-email" href="#">Open pre-filled email</a>
+              </div>
+              <div class="copy-status" id="copy-status" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="request-footer">
+          <a class="button secondary" href="https://www.walnutcreeksd.org/english-learner-program" target="_blank" rel="noopener">Read WCSD's official instructions</a>
+          <a class="button secondary" href="mailto:BringSpanishEdtoWalnutCreek@gmail.com">Questions? Email the parent group</a>
         </div>
       </div>
     </section>
