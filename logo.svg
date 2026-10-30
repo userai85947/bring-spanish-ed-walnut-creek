@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 520" role="img" aria-labelledby="title desc">
+  <title id="title">Spanish Immersion WCSD</title>
+  <desc id="desc">Circular Spanish Immersion WCSD community logo with a sunrise, hills, and children.</desc>
+  <defs>
+    <path id="topArc" d="M 85 255 A 175 175 0 0 1 435 255"/>
+  </defs>
+  <circle cx="260" cy="260" r="244" fill="#f8fbf7" stroke="#123b5d" stroke-width="18"/>
+  <text font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="42" fill="#123b5d" letter-spacing="2">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">SPANISH IMMERSION</textPath>
+  </text>
+  <text x="260" y="205" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="74" fill="#123b5d">WCSD</text>
+  <circle cx="260" cy="255" r="54" fill="#f3c84b"/>
+  <path d="M65 348 Q170 265 270 337 Q355 286 458 342 L458 430 L65 430 Z" fill="#7ab646"/>
+  <path d="M65 386 Q165 325 255 379 Q355 320 458 378 L458 447 L65 447 Z" fill="#438f45"/>
+  <g stroke="#123b5d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="128" cy="356" r="26" fill="#b86f3c"/><path d="M100 420 Q128 376 156 420" fill="#f09a3e"/>
+    <circle cx="194" cy="344" r="27" fill="#7b4b2d"/><path d="M164 419 Q194 372 224 419" fill="#6b59b7"/>
+    <circle cx="260" cy="350" r="27" fill="#d59a72"/><path d="M230 425 Q260 376 290 425" fill="#32a8b5"/>
+    <circle cx="326" cy="344" r="27" fill="#a56039"/><path d="M296 419 Q326 372 356 419" fill="#ef5e7d"/>
+    <circle cx="392" cy="356" r="26" fill="#5f3927"/><path d="M364 420 Q392 376 420 420" fill="#ef8f35"/>
+    <path d="M154 392 Q177 376 194 389M224 389 Q242 374 260 389M290 389 Q309 374 326 389M356 389 Q377 376 392 392" fill="none"/>
+  </g>
+</svg>
