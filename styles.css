@@ -46,7 +46,7 @@ a{color:inherit}
 .eyebrow{
   display:inline-flex;align-items:center;gap:8px;
   font-weight:850;text-transform:uppercase;letter-spacing:.08em;
-  color:var(--green-dark);font-size:.82rem;
+  color:var(--green-dark);font-size:1rem;
 }
 .eyebrow::before{content:"";width:32px;height:5px;background:var(--yellow);border-radius:999px}
 h1,h2,h3{line-height:1.1;color:var(--navy);margin-top:0}
