@@ -75,6 +75,7 @@ function showSchool(key) {
   const principalEmail = document.getElementById("principal-email");
   const template = document.getElementById("request-template");
   const openEmail = document.getElementById("open-email");
+  const openGmail = document.getElementById("open-gmail");
   const status = document.getElementById("copy-status");
 
   const body = buildTemplate(school);
@@ -86,6 +87,7 @@ function showSchool(key) {
   principalEmail.href = `mailto:${school.email}`;
   template.value = body;
   openEmail.href = `mailto:${school.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  openGmail.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(school.email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   status.textContent = "";
   panel.hidden = false;
 
