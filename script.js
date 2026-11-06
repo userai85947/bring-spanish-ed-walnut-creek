@@ -46,23 +46,24 @@ function todayLong() {
 }
 
 function buildTemplate(school) {
+  const schoolDisplay = school.name.includes("Elementary") ? `${school.name} School` : school.name;
   return `Dear Principal ${school.salutation},
 
-I am submitting a written request for a Spanish-English Two-Way Dual Immersion language acquisition program pursuant to California Education Code § 310.
+I am submitting a formal request for a Spanish-English Two-Way Dual Immersion (TWDI) language acquisition program at ${schoolDisplay} beginning in the 2027-2028 school year.
 
-Date of request: ${todayLong()}
-Parent/guardian name: [YOUR NAME]
-Home address: [YOUR HOME ADDRESS]
-Student name: [YOUR CHILD'S NAME]
-Student grade level: [GRADE]
-School year requested to begin: 2027–2028
-Requested program: Spanish-English Two-Way Dual Immersion, with grade-level academic instruction in both English and Spanish
-Preferred languages of instruction: English and Spanish
+Date: [Date]
+Parent/Guardian: [Name]
+Home Address: [Address]
+Student: [Student Name]
+Current Grade: [Grade]
+Requested School Year: 2027-2028
+Requested Program: Spanish-English Two-Way Dual Immersion
+Languages of Instruction: Spanish and English
 
-Please document this request as part of WCSD's process for requests for the same or substantially similar language acquisition program.
+Please document this as my formal request for a new language acquisition program pursuant to California Education Code Section 310 / Proposition 58.
 
 Thank you,
-[YOUR NAME]`;
+[Name]`;
 }
 
 function showSchool(key) {
@@ -96,6 +97,9 @@ function showSchool(key) {
   openGmail.href = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(school.email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   status.textContent = "";
   panel.hidden = false;
+
+  template.style.height = "auto";
+  template.style.height = `${template.scrollHeight}px`;
 
   panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
