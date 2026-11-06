@@ -332,3 +332,46 @@ footer strong{color:var(--navy)}
   .deadline-pair{gap:22px}
   .deadline-pair > div{gap:6px}
 }
+
+
+.deadline-step{
+  display:grid;
+  grid-template-columns:140px 1fr;
+  gap:24px;
+  align-items:start;
+}
+.deadline-number{
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+}
+.deadline-number strong.big{
+  display:block;
+  color:var(--green-dark);
+  font-size:clamp(2.5rem,6vw,4.4rem);
+  line-height:1;
+  margin:0;
+}
+.deadline-number span{
+  color:var(--navy);
+  font-weight:900;
+  letter-spacing:.08em;
+  padding-bottom:.35rem;
+}
+.deadline-step h3{
+  margin:0 0 10px;
+}
+.deadline-step p{
+  margin:0;
+}
+.deadline-divider{
+  height:1px;
+  background:rgba(18,59,93,.12);
+  margin:24px 0;
+}
+@media(max-width:650px){
+  .deadline-step{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+}
