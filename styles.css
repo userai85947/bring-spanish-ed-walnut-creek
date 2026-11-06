@@ -298,3 +298,37 @@ footer strong{color:var(--navy)}
   .request-footer{flex-direction:column}
   .request-footer .button{width:100%}
 }
+
+
+.deadline-pair{
+  display:flex;
+  gap:34px;
+  align-items:flex-end;
+  margin-bottom:18px;
+}
+.deadline-pair > div{
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+}
+.deadline-pair strong.big{
+  display:block;
+  color:var(--green-dark);
+  font-size:clamp(2.5rem,6vw,4.4rem);
+  line-height:1;
+  margin:0;
+}
+.deadline-pair span{
+  color:var(--navy);
+  font-weight:900;
+  letter-spacing:.08em;
+  padding-bottom:.35rem;
+}
+.legal-note h3{
+  font-size:1.45rem;
+  margin:0 0 14px;
+}
+@media(max-width:560px){
+  .deadline-pair{gap:22px}
+  .deadline-pair > div{gap:6px}
+}
