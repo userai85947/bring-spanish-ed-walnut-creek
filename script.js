@@ -23,6 +23,12 @@ const schools = {
     salutation: "Burstein",
     email: "mburstein@walnutcreeksd.org"
   },
+  "tice-creek": {
+    name: "Tice Creek",
+    principal: "Pam Davis",
+    salutation: "Davis",
+    email: "pdavis@walnutcreeksd.org"
+  },
   "walnut-heights": {
     name: "Walnut Heights Elementary",
     principal: "Amy Romem",
