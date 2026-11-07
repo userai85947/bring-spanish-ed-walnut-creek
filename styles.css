@@ -397,3 +397,5 @@ footer strong{color:var(--navy)}
     gap:10px;
   }
 }
+
+.request-source-description{display:block;}
