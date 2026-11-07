@@ -285,25 +285,6 @@ footer strong{color:var(--navy)}
   align-items:flex-start;
 }
 
-.request-source-block{
-  display:flex;
-  flex-direction:column;
-  gap:8px;
-}
-
-.request-source-note{
-  display:flex;
-  flex-direction:column;
-  gap:2px;
-  max-width:560px;
-  font-size:.9rem;
-  color:var(--muted);
-}
-
-.request-source-note a{
-  color:var(--blue);
-  font-weight:800;
-}
 
 @media(max-width:900px){
   .school-picker{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -398,4 +379,36 @@ footer strong{color:var(--navy)}
   }
 }
 
-.request-source-description{display:block;}
+
+.official-instructions-card{
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  max-width:620px;
+  padding:18px 20px;
+  border-radius:18px;
+  text-decoration:none;
+  background:var(--navy);
+  color:#fff;
+  box-shadow:0 10px 24px rgba(18,59,93,.16);
+  border:1px solid rgba(255,255,255,.12);
+  transition:.18s ease;
+}
+
+.official-instructions-card:hover{
+  transform:translateY(-2px);
+  background:#0f324f;
+}
+
+.official-instructions-title{
+  font-weight:900;
+  font-size:1rem;
+  line-height:1.25;
+}
+
+.official-instructions-subtitle{
+  font-size:.9rem;
+  line-height:1.4;
+  color:#dfeaf1;
+  font-weight:600;
+}
