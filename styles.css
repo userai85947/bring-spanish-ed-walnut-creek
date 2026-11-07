@@ -71,6 +71,7 @@ h1 .accent{color:var(--green)}
 .section-header{max-width:760px;margin-bottom:34px}
 .section-header h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.035em;margin-bottom:14px}
 .section-header p{font-size:1.1rem;color:var(--muted);margin:0}
+.legal-source-link{display:inline-block;white-space:nowrap}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{
   background:#fff;border:1px solid rgba(18,59,93,.08);
