@@ -34,6 +34,12 @@ const schools = {
     principal: "Amy Romem",
     salutation: "Romem",
     email: "aromem@walnutcreeksd.org"
+  },
+  "walnut-creek-intermediate": {
+    name: "Walnut Creek Intermediate School",
+    principal: "Jason Law",
+    salutation: "Law",
+    email: "jlaw@walnutcreeksd.org"
   }
 };
 
